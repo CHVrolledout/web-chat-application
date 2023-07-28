@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+  </head>
+  <body>
+    <div class="login-page">
+      <div class="form">
+        <div class="title">
+          <p>Local Chat Application</p>
+        </div>
+        <form class="login-form" id="login-form-id">
+          <div class="input-container">
+            <input type="text" placeholder="Enter your name" />
+          </div>
+          <button onclick="loginFunction(event)">Login</button>
+        </form>        
+      </div>
+    </div>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
