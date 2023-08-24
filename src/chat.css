@@ -100,7 +100,20 @@ h3 {
   border-radius: 0 20px 0 0;
   display: flex;
   align-items:center;
-  justify-content: center;
+  justify-content:space-between;
+}
+
+.lButton{
+  height: 100%;
+  
+}
+
+.logoutButton{
+  height: 100%;
+  background-color: red;
+  width: 100px;
+  color: white;
+  font-size: medium;
 }
 
 
@@ -122,6 +135,8 @@ h3 {
 .messages {
   display: flex;
   flex-direction: column; /* Stack messages vertically */
+  overflow-y: scroll;
+  max-height: 100%;
 }
 
 .message {
@@ -132,7 +147,24 @@ h3 {
   font-size: 16px;
   word-wrap: break-word;
   word-break: break-all;
+  display: flex; /* Use flexbox to arrange items vertically */
+  flex-direction: column; /* Stack items vertically */
 }
+
+.user-name {
+  text-align: left;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.message-content {
+  color: black;
+  text-align: left;
+  padding: 5px;
+}
+
 
 .sender {
   background-color: #00a2ff;

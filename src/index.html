@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" type="text/css" href="index.css"/>
+    <link rel="stylesheet" type="text/css" href="index.css">
   </head>
   <body>
     <div class="login-page">
@@ -14,9 +14,10 @@
         </div>
         <form class="login-form" id="login-form-id">
           <div class="input-container">
-            <input type="text" placeholder="Enter your name" />
+            <input type="text" id="usernameInput" placeholder="Enter your name" />
+            <span class="tooltiptext" id="emptyWarning">Please enter text</span>
           </div>
-          <button onclick="loginFunction(event)">Login</button>
+          <button id="myButton" disabled onclick="loginFunction(event)">Login</button>
         </form>        
       </div>
     </div>

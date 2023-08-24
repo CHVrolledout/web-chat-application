@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>chat</title>
-  <link href="chat.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="chat.css">
 </head>
 
 <body>
@@ -14,47 +14,33 @@
       <div class="people-list-title">
         Connected People
       </div>
-      <div class="people-list">
-        <div class="connected-user">
-          <div>
-            <img class="profile-image" src="assets/male.jpg" alt="">
-          </div>
-          <h3>Robo Cop</h3>
-        </div>
-        <hr>
+      <div id="people-list-id" class="people-list">
+
       </div>
     </div>
     <div class="line"></div>
     <div class="chat-window">
       <div class="chat-header">
-          <span class="chat-header-title">Local chat group</span>
+        <span class="chat-header-title">Local chat group</span>
+        <div class="lButton">
+          <button class="logoutButton" onclick="logoutFunction()">Logout</button>
+        </div>
       </div>
       <div class="chat-body">
-        <div class="messages">
-          <div class="message sender">
-            <p class="message-content">This is a message from the sender.</p>
-          </div>
+        <div id="messagesId" class="messages">
           
-          <div class="message receiver">
-            <p class="message-content">This is a message from the receiver.</p>
-          </div>  
-          <div class="message sender">
-            <p class="message-content">This is a adckbsdkvbsdvsavnaskdjvbaskvbasvansj j adshv asdvj asbvjasb vjaslbv ajsvasvasvabsvbasjvbasbvalshjsbvjhsbvhmessage from the sender.</p>
-          </div>
-          
-          <div class="message receiver">
-            <p class="message-content">This is a adckbsdkvbsdvsavnaskdjvbaskvbasvansj j adshv asdvj asbvjasb vjaslbv ajsvasvasvabsvbasjvbasbvalshjsbvjhsbvhmessage from the sender.</p>
-          </div> 
         </div>
       </div>
       <div class="write-box">
         <div class="input-wrapper">
-          <input type="text" placeholder="Type your message here...">
-          <button type="button">Send</button>
+          <input type="text" id="userMessage" placeholder="Type your message here...">
+          <button type="button" onclick="sendMessage()">Send</button>
         </div>
-      </div>      
+      </div>
     </div>
   </div>
+  <script src="socket.io/socket.io.js"></script>
+  <script src="chat.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 {
-  "name": "local-chat-applicaton-project",
+  "name": "local-chat-application-project",
   "version": "1.0.0",
   "main": "chat-window.js",
   "scripts": {
@@ -11,6 +11,8 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
     "express": "^4.18.2",
     "nodemon": "^3.0.1",
     "socket.io": "^4.7.1"
